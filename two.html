@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <title>Srinivas</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://static.toiimg.com/photo/87064706.cms"
+    />
+    <style>
+      ul {
+        list-style-type: none;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        background-color: bisque;
+      }
+
+      li {
+        float: left;
+      }
+
+      li a {
+        display: block;
+        color: rgb(36, 15, 230);
+        text-align: center;
+        padding: 16px;
+        text-decoration: none;
+      }
+
+      li a:hover {
+        background-color: #75ee11;
+      }
+
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+
+      tr:hover {
+        background-color: hsl(53, 95%, 50%);
+      }
+
+      th,
+      td {
+        padding: 15px;
+      }
+
+      tr:nth-child(even) {
+        background-color: #d6eeee;
+      }
+
+      th:nth-child(odd) {
+        background-color: #75ee11;
+      }
+
+      td:nth-child(even) {
+        background-color: hsl(268, 48%, 47%);
+      }
+    </style>
+  </head>
+
+  <body>
+    <h2>The picture Element</h2>
+
+    <!-- <picture>
+        <source media="(min-width: 650px)" srcset="img_food.jpg" />
+        <source media="(min-width: 465px)" srcset="img_car.jpg" />
+        <img class="fit-picture" src="/media/cc0-images/grapefruit-slice-332-332.jpg" alt="Grapefruit slice atop a pile of other slices" />
+    </picture> -->
+
+    <p>
+      <img
+        src="https://www.w3schools.com/images/w3schools_green.jpg"
+        alt="Smiley face"
+        style="float: right; width: 42px; height: 42px"
+      />
+      The image will float to the right of the text.
+    </p>
+
+    <p>
+      <img
+        src="https://www.w3schools.com/images/w3schools_green.jpg"
+        alt="Smiley face"
+        style="float: left; width: 42px; height: 42px"
+      />
+      The image will float to the left of the text.
+    </p>
+
+    <!-- <picture>
+      <source
+        media="(min-width: 650px)"
+        srcset="https://static.toiimg.com/photo/87064706.cms"
+      />
+      <source
+        media="(min-width: 465px)"
+        srcset="
+          https://www.themoviedb.org/t/p/w500/mNQA0qYtLeemo7mljd9RlG9jUMR.jpg
+        "
+      />
+      <img src="img_girl.jpg" alt="picture" />
+    </picture> -->
+    <table>
+      <tr style="border-bottom: 1px solid #fb0808">
+        <th>Movie</th>
+        <th>Director</th>
+        <th style="width: 30%">Actor</th>
+        <th>Release</th>
+        <th>Rating</th>
+      </tr>
+      <tr>
+        <td>RRR</td>
+        <td>SS Rajamouli</td>
+        <td>Ramcharan</td>
+        <td>2022</td>
+        <td>8</td>
+      </tr>
+      <tr>
+        <td>KGF 2</td>
+        <td>Prashanth Neel</td>
+        <td>Yash</td>
+        <td>2022</td>
+        <td>8</td>
+      </tr>
+      <tr>
+        <td>Vikram</td>
+        <td>Lokesh K</td>
+        <td style="height: 50px">Kamal Hassan, FAFA, VS</td>
+        <td>2022</td>
+        <td>9</td>
+      </tr>
+      <tr>
+        <td>PS 1</td>
+        <td>MANI RATNAM</td>
+        <td>Vikram, Karthi</td>
+        <td>2022</td>
+        <td>8</td>
+      </tr>
+      <tr>
+        <td>Kantara</td>
+        <td>Rishab Shetty</td>
+        <td>Rishab Shetty</td>
+        <td>2022</td>
+        <td>9</td>
+      </tr>
+      <tr>
+        <td>Karthikeya 2</td>
+        <td>Chandoo Mondeti</td>
+        <td>Nikhil Sidarth</td>
+        <td>2022</td>
+        <td>9</td>
+      </tr>
+      <tr>
+        <td>Malyankunju</td>
+        <td>Sajimon Prabhakar</td>
+        <td>FAFA</td>
+        <td>2022</td>
+        <td>7</td>
+      </tr>
+      <tr>
+        <td>Drishyam 2</td>
+        <td>Jeethu Joseph</td>
+        <td>Mohan Lal</td>
+        <td>2022</td>
+        <td>8</td>
+      </tr>
+      <tr>
+        <td>Hridayam</td>
+        <td>Vineeth Sreenivasan</td>
+        <td>Pranav</td>
+        <td>2022</td>
+        <td>8.1</td>
+      </tr>
+      <tr>
+        <td>Jana Gana Mana</td>
+        <td>Dijo Jose Antony</td>
+        <td>Prithviraj</td>
+        <td>2022</td>
+        <td>8</td>
+      </tr>
+    </table>
+    <table>
+      <tr>
+        <th>Firstname</th>
+        <td>Jill</td>
+        <td>Eve</td>
+      </tr>
+      <tr>
+        <th>Lastname</th>
+        <td>Smith</td>
+        <td>Jackson</td>
+      </tr>
+      <tr>
+        <th>Age</th>
+        <td>94</td>
+        <td>50</td>
+      </tr>
+    </table>
+
+    <table>
+      <tr>
+        <th colspan="2">Name</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+      </tr>
+    </table>
+
+    <table style="width: 100%" border-spacing: 30px;>
+      <caption>
+        Monthly savings
+      </caption>
+      <tr>
+        <th>Month</th>
+        <th>Savings</th>
+      </tr>
+      <tr align="centre">
+        <td>January</td>
+        <td>$100</td>
+      </tr>
+      <tr>
+        <td>February</td>
+        <td>$50</td>
+      </tr>
+    </table>
+
+    <table style="width: 100%">
+      <tr>
+        <th></th>
+        <th>Mon</th>
+        <th>Tue</th>
+        <th>Wed</th>
+        <th>Thu</th>
+        <th>Fri</th>
+        <th>Sat</th>
+      </tr>
+      <tr>
+        <td>A</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>B</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>C</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>D</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+
+    <table>
+      <tr>
+        <th>Name</th>
+        <td>Jill</td>
+      </tr>
+      <tr>
+        <th rowspan="4">Phone</th>
+        <td>123-456</td>
+      </tr>
+      <tr>
+        <td>987-654</td>
+      </tr>
+      <tr>
+        <td>987-654</td>
+      </tr>
+      <tr>
+        <td>987-654</td>
+      </tr>
+    </table>
+    <!-- <ul style="list-style-type: none">
+      <li>Megastar</li>
+      <li>Power Star</li>
+      <li>Mega Power Star</li>
+    </ul>
+    <ol>
+      <li>Megastar</li>
+      <li>Power Star</li>
+      <li>Mega Power Star</li>
+    </ol> -->
+    <dl>
+      <dt>Megastar</dt>
+      <dd>Chiranjeevi</dd>
+      <dt>Power Star</dt>
+      <dd>Pawan Kalyan</dd>
+      <dt>Mega Power Star</dt>
+      <dd>Ram Charan</dd>
+    </dl>
+    <!-- <ul>
+      <li>A</li>
+      <li>
+        B
+        <ul>
+          <li>
+            C
+            <ul>
+              <li>
+                X
+                <ul>
+                  <li>1</li>
+                </ul>
+              </li>
+              <li>Y</li>
+            </ul>
+          </li>
+          <li>D</li>
+        </ul>
+      </li>
+      <li>E</li>
+    </ul> -->
+
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+  </body>
+</html>
